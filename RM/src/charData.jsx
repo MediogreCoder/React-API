@@ -16,12 +16,13 @@ const FetchData  = () => {
   }, [])
 
   let apiFetch = () => {
-    // function randomNumber(min, max) {
-    //   return Math.floor(Math.random() * (max-min) + min);
-    // }
-    // n = randomNumber(1, 42) 
-    // for (let i = n; i <= n; i++) {
-      fetch("https://rickandmortyapi.com/api/character/?page=1", {
+    function randomNumber(min, max) {
+      return Math.floor(Math.random() * (max-min) + min);
+    }
+    let n = randomNumber(1, 42) 
+   
+      // fetch("https://rickandmortyapi.com/api/character/?page=1", {
+        fetch(`https://rickandmortyapi.com/api/character/?page=${n}`, {
         headers: new Headers({
           Accept: "application/json",
         }),
@@ -39,18 +40,19 @@ const FetchData  = () => {
                 return (<div class="charCard">
                <div class="photoDiv" key={person.id}>
                      <img src={person.image} class="profilepics" alt="profilepics"></img>
-                   <h1>{person.name} - {person.status}</h1>
+                    <h3>Name: {person.name} </h3>
+                    <h3>Status: {person.status}</h3>
+                    <h3>Species: {person.species}</h3>
+                    <h3>Gender: {person.gender}</h3>
+                    <h3>Origin: {person.origin.name}</h3>
                   </div>
                   </div>)
                 })}
            </div>
             </div>
         
-        );
+        )
   }
 
-
-
-    
 
 export default FetchData

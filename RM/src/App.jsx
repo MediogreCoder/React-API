@@ -1,4 +1,4 @@
-import Data from "./fetch.jsx";
+import Data from "./charData.jsx";
 import portal from "./pngfind.com-portal-png-496250.png";
 import Rick from "./RickName.png";
 import Morty from "./MortyName.png";
@@ -16,11 +16,6 @@ function App() {
       </div>
       <div className="App">
         <Data />
-        {/* {data.map(
-            (card) => 
-              <CharCards card={card}></Cards>
-          )
-        } */}
       </div>
     </div>
   );

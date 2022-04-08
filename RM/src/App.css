@@ -35,12 +35,6 @@ animation: heart-pulse 10s infinite ease-out;
   background-color: #e5e5e5;
 }
 
-.charblock {
-  display: inline-block;
-  margin: 0 auto;
-}  
-
-
 #listChars{
   display: flex;
   flex-wrap: wrap;
@@ -49,22 +43,24 @@ animation: heart-pulse 10s infinite ease-out;
 
 .charCard{
   height: 600px;
-  width: 300px;
+  width: 280px;
   background-color: whitesmoke;
   border-radius: 10px;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
   margin: 10px;
+  display: flex;
+  justify-content: center;
   
 }
 
 .profilepics{
 border-radius: 10px;
-height: 320px;
-width: 320px;
+height: 300px;
+width: 300px;
 box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 }
 
+
 .photoDiv{
-  display: flex;
-  align-content: center;
+  text-align: center;
 }
