@@ -34,3 +34,10 @@ animation: heart-pulse 10s infinite ease-out;
 .charContainer{
   background-color: #e5e5e5;
 }
+
+.charblock {
+  display: inline-block;
+  margin: 0 auto;
+}  
+
+

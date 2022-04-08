@@ -1,8 +1,7 @@
-import Characters from "./characterSection.jsx";
-import portal from "./pngfind.com-portal-png-496250.png"
-import Rick from "./RickName.png"
-import Morty from "./MortyName.png"
-
+import Data from "./fetch.jsx";
+import portal from "./pngfind.com-portal-png-496250.png";
+import Rick from "./RickName.png";
+import Morty from "./MortyName.png";
 import "./App.css";
 
 function App() {
@@ -16,7 +15,12 @@ function App() {
           </div>
       </div>
       <div className="App">
-        <Characters />
+        <Data />
+        {/* {data.map(
+            (card) => 
+              <CharCards card={card}></Cards>
+          )
+        } */}
       </div>
     </div>
   );
