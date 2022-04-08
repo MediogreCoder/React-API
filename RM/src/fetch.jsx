@@ -12,10 +12,10 @@ const FetchData  = () => {
 
   useEffect(() => 
   {
-    apiCall( );
+    apiFetch();
   }, [])
 
-  let apiCall = () => {
+  let apiFetch = () => {
     // function randomNumber(min, max) {
     //   return Math.floor(Math.random() * (max-min) + min);
     // }
@@ -34,21 +34,18 @@ const FetchData  = () => {
   
         return (
           <div class="charContainer">
-            <div class="charBlock">
             <div id="listChars">
                {char.map(person => {
-                return (<div>
-               <div key={person.id}>
-                     <img src={person.image} alt="profilepics"></img>
+                return (<div class="charCard">
+               <div class="photoDiv" key={person.id}>
+                     <img src={person.image} class="profilepics" alt="profilepics"></img>
                    <h1>{person.name} - {person.status}</h1>
                   </div>
                   </div>)
                 })}
            </div>
-              {/* <h1>{char}</h1> */}
-              {/* <img src={char} alt="charphoto"></img> */}
             </div>
-          </div>
+        
         );
   }
 

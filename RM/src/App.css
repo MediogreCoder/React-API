@@ -19,7 +19,7 @@ animation: heart-pulse 10s infinite ease-out;
     transform: scale(1); /* scaling to 0 */
   }
   50% {
-    transform: scale(.9); /* increasing the size */
+    transform: scale(.8); /* increasing the size */
   }
 
   100% {
@@ -41,3 +41,30 @@ animation: heart-pulse 10s infinite ease-out;
 }  
 
 
+#listChars{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.charCard{
+  height: 600px;
+  width: 300px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  margin: 10px;
+  
+}
+
+.profilepics{
+border-radius: 10px;
+height: 320px;
+width: 320px;
+box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.photoDiv{
+  display: flex;
+  align-content: center;
+}
