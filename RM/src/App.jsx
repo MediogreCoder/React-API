@@ -1,13 +1,20 @@
 import Characters from "./characterSection.jsx";
+import portal from "./pngfind.com-portal-png-496250.png"
+import Rick from "./RickName.png"
+import Morty from "./MortyName.png"
+
 import "./App.css";
 
 function App() {
   return (
     <div>
       <div class="header">
-        <h1>Rick and Morty</h1>
+        <div class="imgs">
+        <img src={Rick} class="nameImg"></img>
+          <img src={portal} class="portalImg"></img>
+          <img src={Morty} class="nameImg"></img>
+          </div>
       </div>
-
       <div className="App">
         <Characters />
       </div>

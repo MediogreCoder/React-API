@@ -1,4 +1,36 @@
 .header{
 background-color: #282c34;
 color: white;
+text-align: center;
+}
+
+.imgs{
+  display: block;
+  align-items: center;
+}
+
+.portalImg{
+height: 200px;
+animation: heart-pulse 10s infinite ease-out;
+}
+
+@keyframes heart-pulse {
+  0% {
+    transform: scale(1); /* scaling to 0 */
+  }
+  50% {
+    transform: scale(.9); /* increasing the size */
+  }
+
+  100% {
+    transform: scale(1); /* seeting back to initial size */
+  }
+}
+
+.nameImg{
+  top: 100px;
+}
+
+.charContainer{
+  background-color: #e5e5e5;
 }
