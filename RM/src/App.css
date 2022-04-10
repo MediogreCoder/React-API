@@ -28,7 +28,7 @@ animation: heart-pulse 10s infinite ease-out;
     transform: scale(1); /* scaling to 0 */
   }
   50% {
-    transform: scale(.8); /* increasing the size */
+    transform: scale(.7); /* increasing the size */
   }
 
   100% {
@@ -40,13 +40,12 @@ animation: heart-pulse 10s infinite ease-out;
   top: 100px;
 }
 
-
-
 .listChars{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 
 .charCard{
   height: 300px;
@@ -55,8 +54,39 @@ animation: heart-pulse 10s infinite ease-out;
   border-radius: 10px;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
   margin: 50px;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.charCard2{
+  height: 600px;
+  width: 300px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  margin: 60px;
+  transition-duration: 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.charInfo{
+  display: none;
+  align-content: flex-start;
+ transition-duration: 2s;
+}
+
+.charInfo2 {
+  align-content: flex-start;
+  transition-duration: 2s;
+}
+
+
 
 .profilepics{
 border-radius: 10px;
@@ -68,23 +98,5 @@ transition-duration: 1s;
 
 .profilepics:hover { transform: scale(1.1); }
 
-.photoDiv{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 600px;
-  justify-content: center;
-  align-items: center;
-}
 
-.charCard2{
-  height: 600px;
-  width: 300px;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
-  margin: 50px;
-  transition-duration: 1s;
-}
 

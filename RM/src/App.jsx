@@ -32,19 +32,19 @@ function App() {
     }
 
   return (
-    <div class="container">
-      <div class="header">
-      <div class="imgs">
+<div class="container">
+  <div class="header">
+    <div class="imgs">
       <img src={Rick} class="nameImg" alt="headimg"></img>
-          <img onClick={apiFetch} src={portal} class="portalImg" alt="headimg"></img>
-        <img src={Morty} class="nameImg" alt="headimg"></img>
-        </div>
-      </div>
-    <div class="listChars">
-      {char.map ((person) =>
-        < Characters person={person}/>)}
-      </div>
-      </div>
+      <img onClick={apiFetch} src={portal} class="portalImg" alt="headimg"></img>
+      <img src={Morty} class="nameImg" alt="headimg"></img>
+    </div>
+  </div>
+  <div class="listChars">
+    {char.map ((person) =>
+    < Characters person={person} />)}
+  </div>
+</div>
   )
 }
 
